@@ -1,0 +1,2724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Workspace version="20.0"  modDate="Mon Sep 16 22:29:27 EDT 2019"  clientTimestamp="1568687367993"  flowJoVersion="10.6.1"  drawRowBorders="1"  drawColumnBorders="1"  hideCompNodes="1"  curGroup="All Samples"  groupPaneHeight="80"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:gating="http://www.isac-net.org/std/Gating-ML/v2.0/gating"  xmlns:transforms="http://www.isac-net.org/std/Gating-ML/v2.0/transformations"  xmlns:data-type="http://www.isac-net.org/std/Gating-ML/v2.0/datatypes"  xsi:schemaLocation="http://www.isac-net.org/std/Gating-ML/v2.0/gating http://www.isac-net.org/std/Gating-ML/v2.0/gating/Gating-ML.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/transformations http://www.isac-net.org/std/Gating-ML/v2.0/gating/Transformations.v2.0.xsd http://www.isac-net.org/std/Gating-ML/v2.0/datatypes http://www.isac-net.org/std/Gating-ML/v2.0/gating/DataTypes.v2.0.xsd "  nonAutoSaveFileName="file:/Users/lintian/Downloads/FlowCytometry_tSNE/FACS_Files/FlowJo.wsp" >
+   <WindowPosition x="87"  y="23"  width="600"  height="720"  displayed="1"  panelState="" />
+   <TextTraits font="SansSerif"  size="11"  name=""  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+   <Columns>
+     <TColumn width="305" >
+       <Property key="fj.appnode.prop.name" />
+     </TColumn>
+     <TColumn width="146" >
+       <Property key="fj.appnode.prop.statistic" />
+     </TColumn>
+     <TColumn width="145" >
+       <Property key="fj.appnode.prop.ncells" />
+     </TColumn>
+   </Columns>
+   <Matrices>
+     <transforms:spilloverMatrix spectral="0"  prefix="Comp-"  name="Acquisition-defined"  editable="0"  color="#c0c0c0"  version="FlowJo-10.6.1"  status="FINALIZED"  transforms:id="029bad41-806f-4ecb-bc7c-bf28cb8e559c"  suffix="" >
+       <data-type:parameters>
+         <data-type:parameter data-type:name="PerCP-Cy5-5-A"  userProvidedCompInfix="Comp-PerCP-Cy5-5-A" />
+         <data-type:parameter data-type:name="tdTomato-A"  userProvidedCompInfix="Comp-tdTomato-A" />
+         <data-type:parameter data-type:name="PE-Cy7-A"  userProvidedCompInfix="Comp-PE-Cy7-A" />
+         <data-type:parameter data-type:name="APC-A"  userProvidedCompInfix="Comp-APC-A" />
+         <data-type:parameter data-type:name="APC-Cy7-A"  userProvidedCompInfix="Comp-APC-Cy7-A" />
+         <data-type:parameter data-type:name="BV510-A"  userProvidedCompInfix="Comp-BV510-A" />
+         <data-type:parameter data-type:name="BUV 395-A"  userProvidedCompInfix="Comp-BUV 395-A" />
+       </data-type:parameters>
+       <transforms:spillover data-type:parameter="PerCP-Cy5-5-A"  userProvidedCompInfix="Comp-PerCP-Cy5-5-A" >
+         <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="1" />
+         <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0.0129091395" />
+         <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0.0593012385" />
+         <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0.0298975054" />
+         <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0090898871" />
+         <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+       </transforms:spillover>
+       <transforms:spillover data-type:parameter="tdTomato-A"  userProvidedCompInfix="Comp-tdTomato-A" >
+         <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0.0266392194" />
+         <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="1" />
+         <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0.0008184654" />
+         <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0010682497" />
+         <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+       </transforms:spillover>
+       <transforms:spillover data-type:parameter="PE-Cy7-A"  userProvidedCompInfix="Comp-PE-Cy7-A" >
+         <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0.0114554446" />
+         <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0.0874394625" />
+         <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="1" />
+         <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0.1904517859" />
+         <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0028487882" />
+         <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+       </transforms:spillover>
+       <transforms:spillover data-type:parameter="APC-A"  userProvidedCompInfix="Comp-APC-A" >
+         <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0.0128562637" />
+         <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0.009445277" />
+         <transforms:coefficient data-type:parameter="APC-A"  transforms:value="1" />
+         <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0.0979439989" />
+         <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0009486047" />
+         <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+       </transforms:spillover>
+       <transforms:spillover data-type:parameter="APC-Cy7-A"  userProvidedCompInfix="Comp-APC-Cy7-A" >
+         <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0.0018633461" />
+         <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0.0962499902" />
+         <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0.0383536667" />
+         <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="1" />
+         <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0027725541" />
+         <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+       </transforms:spillover>
+       <transforms:spillover data-type:parameter="BV510-A"  userProvidedCompInfix="Comp-BV510-A" >
+         <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="1" />
+         <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+       </transforms:spillover>
+       <transforms:spillover data-type:parameter="BUV 395-A"  userProvidedCompInfix="Comp-BUV 395-A" >
+         <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0" />
+         <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="1" />
+       </transforms:spillover>
+     </transforms:spilloverMatrix>
+   </Matrices>
+   <Cytometers>
+     <Cytometer name="DIVA"  cyt="LSRFortessa"  useFCS3="1"  extraNegs="0"  widthBasis="-100"  linMin="0"  logMin="3"  linMax="262144"  logMax="262144"  linearRescale="1"  logRescale="1"  linFromKW="1"  logFromKW="1"  useGain="0"  useTransform="1"  transformType="BIEX"  manufacturer=""  serialnumber=""  homepage="workspaces-and-samples/flowjo-and-your-cytometer/ws-cytometer-bd/"  icon="bd.PNG" >
+       <LinParams>
+         <Param>time</Param>
+       </LinParams>
+       <LogParams/>
+       <FilterParams/>
+       <TransformStore>
+         <MatrixID matrixId="029bad41-806f-4ecb-bc7c-bf28cb8e559c" >
+           <Transforms>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="FSC-W" />
+             </transforms:linear>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="BUV 395-A" />
+             </transforms:biex>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="PE-Cy7-A" />
+             </transforms:biex>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="SSC-H" />
+             </transforms:linear>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="tdTomato-A" />
+             </transforms:biex>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="BV510-A" />
+             </transforms:biex>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="FSC-A" />
+             </transforms:linear>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="APC-Cy7-A" />
+             </transforms:biex>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="SSC-A" />
+             </transforms:linear>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="FSC-H" />
+             </transforms:linear>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="APC-A" />
+             </transforms:biex>
+             <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+               <data-type:parameter data-type:name="PerCP-Cy5-5-A" />
+             </transforms:biex>
+             <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+               <data-type:parameter data-type:name="SSC-W" />
+             </transforms:linear>
+           </Transforms>
+         </MatrixID>
+       </TransformStore>
+     </Cytometer>
+     <Cytometer name="GENERIC"  cyt=""  useFCS3="1"  extraNegs="0"  widthBasis="-10"  linMin="0"  logMin="1"  linMax="10000"  logMax="10000"  linearRescale="1"  logRescale="1"  linFromKW="1"  logFromKW="1"  useGain="0"  useTransform="0"  transformType="LOG"  manufacturer=""  serialnumber=""  homepage="workspaces-and-samples/flowjo-and-your-cytometer/ws-instrumentation/"  icon="generic.png" >
+       <LinParams>
+         <Param>time</Param>
+       </LinParams>
+       <LogParams/>
+       <FilterParams/>
+       <TransformStore/>
+     </Cytometer>
+   </Cytometers>
+   <Groups>
+     <GroupNode name="All Samples"  annotation=""  owningGroup="All Samples"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Group name="All Samples"  live="1"  role="ws.group.dlog.test"  key=""  synchronized="0"  foreground="#000000"  fontStyle="bold" >
+         <Criteria/>
+         <BlacklistedSamples>
+           <SampleRef sampleID="9" />
+         </BlacklistedSamples>
+         <SampleRefs>
+           <SampleRef sampleID="1" />
+           <SampleRef sampleID="2" />
+           <SampleRef sampleID="3" />
+           <SampleRef sampleID="4" />
+           <SampleRef sampleID="5" />
+           <SampleRef sampleID="6" />
+           <SampleRef sampleID="8" />
+           <SampleRef sampleID="7" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+     <GroupNode name="Compensation"  annotation=""  owningGroup="Compensation"  expanded="1"  sortPriority="10"  count="-1" >
+       <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+         <Axis dimension="x"  name=""  label=""  auto="auto" />
+         <Axis dimension="y"  name=""  label=""  auto="auto" />
+         <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+         <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+           <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+           <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+         </GraphEnvironment>
+       </Graph>
+       <Group name="Compensation"  live="1"  role="ws.group.dlog.compensation"  key=""  synchronized="0"  foreground="#bc1900"  fontStyle="bold" >
+         <Criteria>
+           <Criterion connector="And"  keyword="$FIL"  function="Contains"  value="comp" />
+           <Criterion connector="Or"  keyword="$FIL"  function="Contains"  value="unstained" />
+         </Criteria>
+         <SampleRefs>
+           <SampleRef sampleID="2" />
+           <SampleRef sampleID="3" />
+           <SampleRef sampleID="4" />
+           <SampleRef sampleID="5" />
+           <SampleRef sampleID="6" />
+           <SampleRef sampleID="7" />
+           <SampleRef sampleID="8" />
+         </SampleRefs>
+         <Keywords/>
+       </Group>
+     </GroupNode>
+   </Groups>
+   <SampleList>
+     <Sample>
+       <DataSet uri="file:/Users/lintian/Downloads/FlowCytometry_tSNE/FACS_Files/Clec4f_tdRed_LiverDissociation_LiverDissociate_001.fcs"  sampleID="1" />
+       <transforms:spilloverMatrix spectral="0"  prefix="Comp-"  name="Acquisition-defined"  editable="0"  color="#c0c0c0"  version="FlowJo-10.6.1"  status="FINALIZED"  transforms:id="029bad41-806f-4ecb-bc7c-bf28cb8e559c"  suffix="" >
+         <data-type:parameters>
+           <data-type:parameter data-type:name="PerCP-Cy5-5-A"  userProvidedCompInfix="Comp-PerCP-Cy5-5-A" />
+           <data-type:parameter data-type:name="tdTomato-A"  userProvidedCompInfix="Comp-tdTomato-A" />
+           <data-type:parameter data-type:name="PE-Cy7-A"  userProvidedCompInfix="Comp-PE-Cy7-A" />
+           <data-type:parameter data-type:name="APC-A"  userProvidedCompInfix="Comp-APC-A" />
+           <data-type:parameter data-type:name="APC-Cy7-A"  userProvidedCompInfix="Comp-APC-Cy7-A" />
+           <data-type:parameter data-type:name="BV510-A"  userProvidedCompInfix="Comp-BV510-A" />
+           <data-type:parameter data-type:name="BUV 395-A"  userProvidedCompInfix="Comp-BUV 395-A" />
+         </data-type:parameters>
+         <transforms:spillover data-type:parameter="PerCP-Cy5-5-A"  userProvidedCompInfix="Comp-PerCP-Cy5-5-A" >
+           <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="1" />
+           <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0.0129091395" />
+           <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0.0593012385" />
+           <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0.0298975054" />
+           <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0090898871" />
+           <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+         </transforms:spillover>
+         <transforms:spillover data-type:parameter="tdTomato-A"  userProvidedCompInfix="Comp-tdTomato-A" >
+           <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0.0266392194" />
+           <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="1" />
+           <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0.0008184654" />
+           <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0010682497" />
+           <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+         </transforms:spillover>
+         <transforms:spillover data-type:parameter="PE-Cy7-A"  userProvidedCompInfix="Comp-PE-Cy7-A" >
+           <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0.0114554446" />
+           <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0.0874394625" />
+           <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="1" />
+           <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0.1904517859" />
+           <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0028487882" />
+           <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+         </transforms:spillover>
+         <transforms:spillover data-type:parameter="APC-A"  userProvidedCompInfix="Comp-APC-A" >
+           <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0.0128562637" />
+           <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0.009445277" />
+           <transforms:coefficient data-type:parameter="APC-A"  transforms:value="1" />
+           <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0.0979439989" />
+           <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0009486047" />
+           <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+         </transforms:spillover>
+         <transforms:spillover data-type:parameter="APC-Cy7-A"  userProvidedCompInfix="Comp-APC-Cy7-A" >
+           <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0.0018633461" />
+           <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0.0962499902" />
+           <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0.0383536667" />
+           <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="1" />
+           <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0.0027725541" />
+           <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+         </transforms:spillover>
+         <transforms:spillover data-type:parameter="BV510-A"  userProvidedCompInfix="Comp-BV510-A" >
+           <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="1" />
+           <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="0" />
+         </transforms:spillover>
+         <transforms:spillover data-type:parameter="BUV 395-A"  userProvidedCompInfix="Comp-BUV 395-A" >
+           <transforms:coefficient data-type:parameter="PerCP-Cy5-5-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="tdTomato-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="PE-Cy7-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="APC-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="APC-Cy7-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="BV510-A"  transforms:value="0" />
+           <transforms:coefficient data-type:parameter="BUV 395-A"  transforms:value="1" />
+         </transforms:spillover>
+       </transforms:spilloverMatrix>
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PerCP-Cy5-5-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="tdTomato-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PE-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BV510-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BUV 395-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0.5213818987"  transforms:maxRange="120"  gain="0.0101436167" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Comp-PerCP-Cy5-5-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Comp-tdTomato-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Comp-PE-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Comp-APC-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Comp-APC-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Comp-BV510-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="Comp-BUV 395-A" />
+         </transforms:biex>
+       </Transformations>
+       <Keywords>
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINDATA"  value="3358" />
+         <Keyword name="$ENDDATA"  value="6070621            " />
+         <Keyword name="$FIL"  value="Clec4f_tdRed_LiverDissociation_LiverDissociate_001.fcs" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$TOT"  value="108344             " />
+         <Keyword name="$PAR"  value="14" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="TUBE NAME"  value="LiverDissociate" />
+         <Keyword name="$SRC"  value="Clec4f_tdRed_LiverDissociation" />
+         <Keyword name="EXPERIMENT NAME"  value="Experiment_001" />
+         <Keyword name="GUID"  value="db0eef96-9ef9-4f4b-bb4d-7942086f373f" />
+         <Keyword name="$DATE"  value="14-SEP-2019" />
+         <Keyword name="$BTIM"  value="21:59:10" />
+         <Keyword name="$ETIM"  value="22:01:10" />
+         <Keyword name="$CYT"  value="LSRFortessa" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="CYTNUM"  value="1" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="EXPORT USER NAME"  value="67901" />
+         <Keyword name="EXPORT TIME"  value="14-SEP-2019-22:07:51" />
+         <Keyword name="$OP"  value="67901" />
+         <Keyword name="FSC ASF"  value="0.79" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1ASF"  value="0.95" />
+         <Keyword name="LASER2NAME"  value="YelGreen" />
+         <Keyword name="LASER2DELAY"  value="-64.36" />
+         <Keyword name="LASER2ASF"  value="0.67" />
+         <Keyword name="LASER3NAME"  value="Red" />
+         <Keyword name="LASER3DELAY"  value="-31.94" />
+         <Keyword name="LASER3ASF"  value="0.83" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER4DELAY"  value="29.23" />
+         <Keyword name="LASER4ASF"  value="0.81" />
+         <Keyword name="LASER5NAME"  value="UV" />
+         <Keyword name="LASER5DELAY"  value="60.99" />
+         <Keyword name="LASER5ASF"  value="1.08" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="SPILL"  value="7,PerCP-Cy5-5-A,tdTomato-A,PE-Cy7-A,APC-A,APC-Cy7-A,BV510-A,BUV 395-A,1,0,0.012909139311508977,0.059301237688038376,0.029897504658229806,0.009089887185112498,0,0.02663922007961308,1,0.000818465364147663,0,0,0.0010682497490635346,0,0.01145544429261879,0.08743946033175014,1,0,0.1904517788794914,0.002848788075059596,0,0.012856263855323178,0,0.009445277450623837,1,0.09794399926138055,0.0009486047137302797,0,0,0.0018633461176992868,0.09624998994583955,0.038353666154435424,1,0.002772554002856521,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1" />
+         <Keyword name="APPLY COMPENSATION"  value="TRUE" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1V"  value="250" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2V"  value="250" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3V"  value="250" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4V"  value="350" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5V"  value="350" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6V"  value="350" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="$P7N"  value="PerCP-Cy5-5-A" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7V"  value="735" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="P7BS"  value="293" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$P8N"  value="tdTomato-A" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8V"  value="550" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="P8BS"  value="241" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="$P9N"  value="PE-Cy7-A" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9V"  value="450" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="P9BS"  value="186" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="APC-A" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10V"  value="600" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="P10BS"  value="149" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="$P11N"  value="APC-Cy7-A" />
+         <Keyword name="$P11R"  value="262144" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11V"  value="625" />
+         <Keyword name="$P11G"  value="1.0" />
+         <Keyword name="P11DISPLAY"  value="LOG" />
+         <Keyword name="P11BS"  value="1733" />
+         <Keyword name="P11MS"  value="0" />
+         <Keyword name="$P12N"  value="BV510-A" />
+         <Keyword name="$P12R"  value="262144" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12V"  value="625" />
+         <Keyword name="$P12G"  value="1.0" />
+         <Keyword name="P12DISPLAY"  value="LOG" />
+         <Keyword name="P12BS"  value="416" />
+         <Keyword name="P12MS"  value="0" />
+         <Keyword name="$P13N"  value="BUV 395-A" />
+         <Keyword name="$P13R"  value="262144" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13V"  value="550" />
+         <Keyword name="$P13G"  value="1.0" />
+         <Keyword name="P13DISPLAY"  value="LOG" />
+         <Keyword name="P13BS"  value="116" />
+         <Keyword name="P13MS"  value="0" />
+         <Keyword name="$P14N"  value="Time" />
+         <Keyword name="$P14R"  value="262144" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14G"  value="0.01" />
+         <Keyword name="P14BS"  value="0" />
+         <Keyword name="P14MS"  value="0" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS" />
+         <Keyword name="CST BEADS LOT ID"  value="83326" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="FCCF Fortessa 1 5 Laser Corrected" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2019-02-20T15:20:42-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2019-09-10T09:29:37-04:00" />
+         <Keyword name="CST BASELINE DATE"  value="2019-08-28T12:14:53-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2019-09-11T09:29:37-04:00" />
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+         <Keyword name="$P11S"  value="" />
+         <Keyword name="$P12S"  value="" />
+         <Keyword name="$P13S"  value="" />
+         <Keyword name="$P14S"  value="" />
+         <Keyword name="$P15N"  value="Comp-PerCP-Cy5-5-A" />
+         <Keyword name="$P15S"  value="" />
+         <Keyword name="$P15R"  value="262144" />
+         <Keyword name="$P16N"  value="Comp-tdTomato-A" />
+         <Keyword name="$P16S"  value="" />
+         <Keyword name="$P16R"  value="262144" />
+         <Keyword name="$P17N"  value="Comp-PE-Cy7-A" />
+         <Keyword name="$P17S"  value="" />
+         <Keyword name="$P17R"  value="262144" />
+         <Keyword name="$P18N"  value="Comp-APC-A" />
+         <Keyword name="$P18S"  value="" />
+         <Keyword name="$P18R"  value="262144" />
+         <Keyword name="$P19N"  value="Comp-APC-Cy7-A" />
+         <Keyword name="$P19S"  value="" />
+         <Keyword name="$P19R"  value="262144" />
+         <Keyword name="$P20N"  value="Comp-BV510-A" />
+         <Keyword name="$P20S"  value="" />
+         <Keyword name="$P20R"  value="262144" />
+         <Keyword name="$P21N"  value="Comp-BUV 395-A" />
+         <Keyword name="$P21S"  value="" />
+         <Keyword name="$P21R"  value="262144" />
+       </Keywords>
+       <SampleNode name="Clec4f_tdRed_LiverDissociation_LiverDissociate_001.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="108344"  sampleID="1" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  heatMapStatParameter="Comp-PerCP-Cy5-5-A"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="23"  width="390"  height="582"  displayed="0"  panelState="---" />
+           </GraphEnvironment>
+         </Graph>
+         <Subpopulations>
+           <Population name="All"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="74507" >
+             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  heatMapStatParameter="Comp-PerCP-Cy5-5-A"  type="Pseudocolor"  fast="1" >
+               <Axis dimension="x"  name="FSC-W"  label=""  auto="auto" />
+               <Axis dimension="y"  name="FSC-H"  label=""  auto="auto" />
+               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                 <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                 <WindowPosition x="0"  y="23"  width="390"  height="582"  displayed="0"  panelState="---" />
+               </GraphEnvironment>
+             </Graph>
+             <Gate gating:id="ID774491788" >
+               <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="FSC-A" />
+                 </gating:dimension>
+                 <gating:dimension>
+                   <data-type:fcs-dimension data-type:name="SSC-A" />
+                 </gating:dimension>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="17545.0708661417" />
+                   <gating:coordinate data-type:value="161398.462745098" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="12384.7559055118" />
+                   <gating:coordinate data-type:value="78129.1921568627" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="27865.7007874016" />
+                   <gating:coordinate data-type:value="5140.0784313725" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="89789.4803149606" />
+                   <gating:coordinate data-type:value="10280.1568627451" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="161001.8267716535" />
+                   <gating:coordinate data-type:value="49344.7529411765" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="220861.4803149606" />
+                   <gating:coordinate data-type:value="129529.9764705882" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="240470.6771653543" />
+                   <gating:coordinate data-type:value="203547.1058823529" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="242534.8031496063" />
+                   <gating:coordinate data-type:value="235415.5921568628" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="189899.5905511811" />
+                   <gating:coordinate data-type:value="249807.8117647059" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="95981.8582677165" />
+                   <gating:coordinate data-type:value="249807.8117647059" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="37154.2677165354" />
+                   <gating:coordinate data-type:value="242611.7019607843" />
+                 </gating:vertex>
+                 <gating:vertex>
+                   <gating:coordinate data-type:value="23737.4488188976" />
+                   <gating:coordinate data-type:value="226163.4509803922" />
+                 </gating:vertex>
+               </gating:PolygonGate>
+             </Gate>
+             <Subpopulations>
+               <Population name="Single Cells 1"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="63662" >
+                 <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  heatMapStatParameter="Comp-PerCP-Cy5-5-A"  type="Pseudocolor"  fast="1" >
+                   <Axis dimension="x"  name="SSC-W"  label=""  auto="auto" />
+                   <Axis dimension="y"  name="SSC-H"  label=""  auto="auto" />
+                   <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                   <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                     <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                     <WindowPosition x="0"  y="23"  width="390"  height="582"  displayed="0"  panelState="---" />
+                   </GraphEnvironment>
+                 </Graph>
+                 <Gate gating:id="ID1799501364"  gating:parent_id="ID774491788" >
+                   <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                     <gating:dimension>
+                       <data-type:fcs-dimension data-type:name="FSC-W" />
+                     </gating:dimension>
+                     <gating:dimension>
+                       <data-type:fcs-dimension data-type:name="FSC-H" />
+                     </gating:dimension>
+                     <gating:vertex>
+                       <gating:coordinate data-type:value="73276.4724409449" />
+                       <gating:coordinate data-type:value="129529.9764705882" />
+                     </gating:vertex>
+                     <gating:vertex>
+                       <gating:coordinate data-type:value="91853.6062992126" />
+                       <gating:coordinate data-type:value="133642.0392156863" />
+                     </gating:vertex>
+                     <gating:vertex>
+                       <gating:coordinate data-type:value="81532.9763779528" />
+                       <gating:coordinate data-type:value="7196.1098039216" />
+                     </gating:vertex>
+                     <gating:vertex>
+                       <gating:coordinate data-type:value="65019.968503937" />
+                       <gating:coordinate data-type:value="7196.1098039216" />
+                     </gating:vertex>
+                     <gating:vertex>
+                       <gating:coordinate data-type:value="60891.7165354331" />
+                       <gating:coordinate data-type:value="28784.4392156863" />
+                     </gating:vertex>
+                     <gating:vertex>
+                       <gating:coordinate data-type:value="62955.842519685" />
+                       <gating:coordinate data-type:value="69905.0666666667" />
+                     </gating:vertex>
+                   </gating:PolygonGate>
+                 </Gate>
+                 <Subpopulations>
+                   <Population name="Single Cells 2"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="57736" >
+                     <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  heatMapStatParameter="Comp-PerCP-Cy5-5-A"  type="Pseudocolor"  fast="1" >
+                       <Axis dimension="x"  name="SSC-H"  label=""  auto="auto" />
+                       <Axis dimension="y"  name="Comp-BUV 395-A"  label=""  auto="auto" />
+                       <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                       <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                         <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                         <WindowPosition x="0"  y="23"  width="390"  height="582"  displayed="0"  panelState="---" />
+                       </GraphEnvironment>
+                     </Graph>
+                     <Gate gating:id="ID740091180"  gating:parent_id="ID1799501364" >
+                       <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                         <gating:dimension>
+                           <data-type:fcs-dimension data-type:name="SSC-W" />
+                         </gating:dimension>
+                         <gating:dimension>
+                           <data-type:fcs-dimension data-type:name="SSC-H" />
+                         </gating:dimension>
+                         <gating:vertex>
+                           <gating:coordinate data-type:value="73276.4724409449" />
+                           <gating:coordinate data-type:value="218967.3411764706" />
+                         </gating:vertex>
+                         <gating:vertex>
+                           <gating:coordinate data-type:value="84629.1653543307" />
+                           <gating:coordinate data-type:value="216911.3098039216" />
+                         </gating:vertex>
+                         <gating:vertex>
+                           <gating:coordinate data-type:value="80500.9133858268" />
+                           <gating:coordinate data-type:value="25700.3921568627" />
+                         </gating:vertex>
+                         <gating:vertex>
+                           <gating:coordinate data-type:value="70180.2834645669" />
+                           <gating:coordinate data-type:value="6168.0941176471" />
+                         </gating:vertex>
+                         <gating:vertex>
+                           <gating:coordinate data-type:value="62955.842519685" />
+                           <gating:coordinate data-type:value="6168.0941176471" />
+                         </gating:vertex>
+                         <gating:vertex>
+                           <gating:coordinate data-type:value="58827.5905511811" />
+                           <gating:coordinate data-type:value="25700.3921568627" />
+                         </gating:vertex>
+                       </gating:PolygonGate>
+                     </Gate>
+                     <Subpopulations>
+                       <Population name="Alive"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="48594" >
+                         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  heatMapStatParameter="Comp-PerCP-Cy5-5-A"  type="Pseudocolor"  fast="1" >
+                           <Axis dimension="x"  name="SSC-H"  label=""  auto="auto" />
+                           <Axis dimension="y"  name="Comp-BUV 395-A"  label=""  auto="auto" />
+                           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+                           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                             <WindowPosition x="0"  y="23"  width="390"  height="582"  displayed="1"  panelState="---" />
+                           </GraphEnvironment>
+                         </Graph>
+                         <Gate gating:id="ID882817901"  gating:parent_id="ID740091180" >
+                           <gating:PolygonGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="0"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1"  quadId="-1"  gateResolution="256" >
+                             <gating:dimension>
+                               <data-type:fcs-dimension data-type:name="SSC-H" />
+                             </gating:dimension>
+                             <gating:dimension>
+                               <data-type:fcs-dimension data-type:name="Comp-BUV 395-A" />
+                             </gating:dimension>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="5160.3149606299" />
+                               <gating:coordinate data-type:value="1708.1256828002" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="2064.125984252" />
+                               <gating:coordinate data-type:value="-13.278901089" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="13416.8188976378" />
+                               <gating:coordinate data-type:value="-347.5614640223" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="182675.1496062992" />
+                               <gating:coordinate data-type:value="429.4386679851" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="227053.8582677165" />
+                               <gating:coordinate data-type:value="981.061687169" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="231182.1102362205" />
+                               <gating:coordinate data-type:value="2708.2362314816" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="227053.8582677165" />
+                               <gating:coordinate data-type:value="5214.484129393" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="209508.7874015748" />
+                               <gating:coordinate data-type:value="7383.0234950365" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="172354.5196850394" />
+                               <gating:coordinate data-type:value="7649.5281268377" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="123847.5590551181" />
+                               <gating:coordinate data-type:value="6642.7517289285" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="79468.8503937008" />
+                               <gating:coordinate data-type:value="4120.3270054757" />
+                             </gating:vertex>
+                             <gating:vertex>
+                               <gating:coordinate data-type:value="28897.7637795276" />
+                               <gating:coordinate data-type:value="2465.7517873905" />
+                             </gating:vertex>
+                           </gating:PolygonGate>
+                         </Gate>
+                         <Subpopulations>
+                           <ExternalPopNode name="DownSample of Alive-Downsample"  annotation=""  owningGroup=""  expanded="1"  sortPriority="9"  javaClass="com.plugins.DownSampleV3"  jarFile="/Applications/plugins/DownSample_v3.1.jar" >
+                             <Downsample numEvents="5000"  populationName="Downsample"  version="3.1" />
+                           </ExternalPopNode>
+                           <Population name="Downsample"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="5000" >
+                             <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  heatMapStatParameter="Comp-PerCP-Cy5-5-A"  type="Pseudocolor"  fast="1" >
+                               <Axis dimension="x"  name="Comp-APC-A"  label=""  auto="auto" />
+                               <Axis dimension="y"  name="Comp-tdTomato-A"  label=""  auto="auto" />
+                               <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000" />
+                               <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+                                 <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                                 <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                                 <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                                 <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+                                 <WindowPosition x="0"  y="23"  width="390"  height="582"  displayed="0"  panelState="---" />
+                               </GraphEnvironment>
+                             </Graph>
+                             <Gate gating:id="ID1006326662"  gating:parent_id="ID882817901" >
+                               <gating:RectangleGate eventsInside="1"  annoOffsetX="0"  annoOffsetY="-20"  tint="#000000"  isTinted="0"  lineWeight="Normal"  userDefined="1" >
+                                 <gating:dimension gating:min="-0.5"  gating:max="0.41715277265007755"  yRatio="0.5" >
+                                   <data-type:fcs-dimension data-type:name="Downsample" />
+                                 </gating:dimension>
+                               </gating:RectangleGate>
+                             </Gate>
+                           </Population>
+                         </Subpopulations>
+                       </Population>
+                     </Subpopulations>
+                   </Population>
+                 </Subpopulations>
+               </Population>
+             </Subpopulations>
+           </Population>
+         </Subpopulations>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/Users/lintian/Downloads/FlowCytometry_tSNE/FACS_Files/Compensation%20Controls_APC%20Stained%20Control_005.fcs"  sampleID="2" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PerCP-Cy5-5-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="tdTomato-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PE-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BV510-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BUV 395-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0.6002957122"  transforms:maxRange="14"  gain="0.0114999179" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+       </Transformations>
+       <Keywords>
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINDATA"  value="2964" />
+         <Keyword name="$ENDDATA"  value="121235             " />
+         <Keyword name="$FIL"  value="Compensation Controls_APC Stained Control_005.fcs" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$TOT"  value="2112               " />
+         <Keyword name="$PAR"  value="14" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="TUBE NAME"  value="APC Stained Control" />
+         <Keyword name="$SRC"  value="Compensation Controls" />
+         <Keyword name="EXPERIMENT NAME"  value="Experiment_001" />
+         <Keyword name="GUID"  value="104a1ff9-1a8a-4f8a-bcec-b299e0b73d52" />
+         <Keyword name="$DATE"  value="14-SEP-2019" />
+         <Keyword name="$BTIM"  value="21:56:02" />
+         <Keyword name="$ETIM"  value="21:56:16" />
+         <Keyword name="$CYT"  value="LSRFortessa" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="CYTNUM"  value="1" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="EXPORT USER NAME"  value="67901" />
+         <Keyword name="EXPORT TIME"  value="14-SEP-2019-22:08:23" />
+         <Keyword name="$OP"  value="67901" />
+         <Keyword name="FSC ASF"  value="0.79" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1ASF"  value="0.95" />
+         <Keyword name="LASER2NAME"  value="YelGreen" />
+         <Keyword name="LASER2DELAY"  value="-64.36" />
+         <Keyword name="LASER2ASF"  value="0.67" />
+         <Keyword name="LASER3NAME"  value="Red" />
+         <Keyword name="LASER3DELAY"  value="-31.94" />
+         <Keyword name="LASER3ASF"  value="0.83" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER4DELAY"  value="29.23" />
+         <Keyword name="LASER4ASF"  value="0.81" />
+         <Keyword name="LASER5NAME"  value="UV" />
+         <Keyword name="LASER5DELAY"  value="60.99" />
+         <Keyword name="LASER5ASF"  value="1.08" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="SPILL"  value="7,PerCP-Cy5-5-A,tdTomato-A,PE-Cy7-A,APC-A,APC-Cy7-A,BV510-A,BUV 395-A,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1V"  value="250" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2V"  value="250" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3V"  value="250" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4V"  value="350" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5V"  value="350" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6V"  value="350" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="$P7N"  value="PerCP-Cy5-5-A" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7V"  value="735" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="P7BS"  value="551" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$P8N"  value="tdTomato-A" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8V"  value="550" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="P8BS"  value="132" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="$P9N"  value="PE-Cy7-A" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9V"  value="450" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="P9BS"  value="81" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="APC-A" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10V"  value="600" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="P10BS"  value="684" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="$P11N"  value="APC-Cy7-A" />
+         <Keyword name="$P11R"  value="262144" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11V"  value="625" />
+         <Keyword name="$P11G"  value="1.0" />
+         <Keyword name="P11DISPLAY"  value="LOG" />
+         <Keyword name="P11BS"  value="492" />
+         <Keyword name="P11MS"  value="0" />
+         <Keyword name="$P12N"  value="BV510-A" />
+         <Keyword name="$P12R"  value="262144" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12V"  value="625" />
+         <Keyword name="$P12G"  value="1.0" />
+         <Keyword name="P12DISPLAY"  value="LOG" />
+         <Keyword name="P12BS"  value="551" />
+         <Keyword name="P12MS"  value="0" />
+         <Keyword name="$P13N"  value="BUV 395-A" />
+         <Keyword name="$P13R"  value="262144" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13V"  value="550" />
+         <Keyword name="$P13G"  value="1.0" />
+         <Keyword name="P13DISPLAY"  value="LOG" />
+         <Keyword name="P13BS"  value="89" />
+         <Keyword name="P13MS"  value="0" />
+         <Keyword name="$P14N"  value="Time" />
+         <Keyword name="$P14R"  value="262144" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14G"  value="0.01" />
+         <Keyword name="P14BS"  value="0" />
+         <Keyword name="P14MS"  value="0" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS" />
+         <Keyword name="CST BEADS LOT ID"  value="83326" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="FCCF Fortessa 1 5 Laser Corrected" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2019-02-20T15:20:42-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2019-09-10T09:29:37-04:00" />
+         <Keyword name="CST BASELINE DATE"  value="2019-08-28T12:14:53-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2019-09-11T09:29:37-04:00" />
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+         <Keyword name="$P11S"  value="" />
+         <Keyword name="$P12S"  value="" />
+         <Keyword name="$P13S"  value="" />
+         <Keyword name="$P14S"  value="" />
+       </Keywords>
+       <SampleNode name="Compensation Controls_APC Stained Control_005.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="2112"  sampleID="2" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="0"  width="0"  height="0"  displayed="0"  panelState="" />
+           </GraphEnvironment>
+         </Graph>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/Users/lintian/Downloads/FlowCytometry_tSNE/FACS_Files/Compensation%20Controls_APC-Cy7%20Stained%20Control_006.fcs"  sampleID="3" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PerCP-Cy5-5-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="tdTomato-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PE-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BV510-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BUV 395-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0.5149598222"  transforms:maxRange="12"  gain="0.0102581638" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+       </Transformations>
+       <Keywords>
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINDATA"  value="2972" />
+         <Keyword name="$ENDDATA"  value="128187             " />
+         <Keyword name="$FIL"  value="Compensation Controls_APC-Cy7 Stained Control_006.fcs" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$TOT"  value="2236               " />
+         <Keyword name="$PAR"  value="14" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="TUBE NAME"  value="APC-Cy7 Stained Control" />
+         <Keyword name="$SRC"  value="Compensation Controls" />
+         <Keyword name="EXPERIMENT NAME"  value="Experiment_001" />
+         <Keyword name="GUID"  value="6b21c70c-e0f0-4953-9207-839dddcd5250" />
+         <Keyword name="$DATE"  value="14-SEP-2019" />
+         <Keyword name="$BTIM"  value="21:56:49" />
+         <Keyword name="$ETIM"  value="21:57:01" />
+         <Keyword name="$CYT"  value="LSRFortessa" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="CYTNUM"  value="1" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="EXPORT USER NAME"  value="67901" />
+         <Keyword name="EXPORT TIME"  value="14-SEP-2019-22:08:23" />
+         <Keyword name="$OP"  value="67901" />
+         <Keyword name="FSC ASF"  value="0.79" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1ASF"  value="0.95" />
+         <Keyword name="LASER2NAME"  value="YelGreen" />
+         <Keyword name="LASER2DELAY"  value="-64.36" />
+         <Keyword name="LASER2ASF"  value="0.67" />
+         <Keyword name="LASER3NAME"  value="Red" />
+         <Keyword name="LASER3DELAY"  value="-31.94" />
+         <Keyword name="LASER3ASF"  value="0.83" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER4DELAY"  value="29.23" />
+         <Keyword name="LASER4ASF"  value="0.81" />
+         <Keyword name="LASER5NAME"  value="UV" />
+         <Keyword name="LASER5DELAY"  value="60.99" />
+         <Keyword name="LASER5ASF"  value="1.08" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="SPILL"  value="7,PerCP-Cy5-5-A,tdTomato-A,PE-Cy7-A,APC-A,APC-Cy7-A,BV510-A,BUV 395-A,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1V"  value="250" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2V"  value="250" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3V"  value="250" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4V"  value="350" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5V"  value="350" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6V"  value="350" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="$P7N"  value="PerCP-Cy5-5-A" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7V"  value="735" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="P7BS"  value="471" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$P8N"  value="tdTomato-A" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8V"  value="550" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="P8BS"  value="100" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="$P9N"  value="PE-Cy7-A" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9V"  value="450" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="P9BS"  value="95" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="APC-A" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10V"  value="600" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="P10BS"  value="70" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="$P11N"  value="APC-Cy7-A" />
+         <Keyword name="$P11R"  value="262144" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11V"  value="625" />
+         <Keyword name="$P11G"  value="1.0" />
+         <Keyword name="P11DISPLAY"  value="LOG" />
+         <Keyword name="P11BS"  value="691" />
+         <Keyword name="P11MS"  value="0" />
+         <Keyword name="$P12N"  value="BV510-A" />
+         <Keyword name="$P12R"  value="262144" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12V"  value="625" />
+         <Keyword name="$P12G"  value="1.0" />
+         <Keyword name="P12DISPLAY"  value="LOG" />
+         <Keyword name="P12BS"  value="559" />
+         <Keyword name="P12MS"  value="0" />
+         <Keyword name="$P13N"  value="BUV 395-A" />
+         <Keyword name="$P13R"  value="262144" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13V"  value="550" />
+         <Keyword name="$P13G"  value="1.0" />
+         <Keyword name="P13DISPLAY"  value="LOG" />
+         <Keyword name="P13BS"  value="101" />
+         <Keyword name="P13MS"  value="0" />
+         <Keyword name="$P14N"  value="Time" />
+         <Keyword name="$P14R"  value="262144" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14G"  value="0.01" />
+         <Keyword name="P14BS"  value="0" />
+         <Keyword name="P14MS"  value="0" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS" />
+         <Keyword name="CST BEADS LOT ID"  value="83326" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="FCCF Fortessa 1 5 Laser Corrected" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2019-02-20T15:20:42-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2019-09-10T09:29:37-04:00" />
+         <Keyword name="CST BASELINE DATE"  value="2019-08-28T12:14:53-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2019-09-11T09:29:37-04:00" />
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+         <Keyword name="$P11S"  value="" />
+         <Keyword name="$P12S"  value="" />
+         <Keyword name="$P13S"  value="" />
+         <Keyword name="$P14S"  value="" />
+       </Keywords>
+       <SampleNode name="Compensation Controls_APC-Cy7 Stained Control_006.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="2236"  sampleID="3" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="0"  width="0"  height="0"  displayed="0"  panelState="" />
+           </GraphEnvironment>
+         </Graph>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/Users/lintian/Downloads/FlowCytometry_tSNE/FACS_Files/Compensation%20Controls_BV510%20Stained%20Control_007.fcs"  sampleID="4" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PerCP-Cy5-5-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="tdTomato-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PE-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BV510-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BUV 395-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0.6313784188"  transforms:maxRange="8"  gain="0.0108858348" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+       </Transformations>
+       <Keywords>
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINDATA"  value="2969" />
+         <Keyword name="$ENDDATA"  value="126840             " />
+         <Keyword name="$FIL"  value="Compensation Controls_BV510 Stained Control_007.fcs" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$TOT"  value="2212               " />
+         <Keyword name="$PAR"  value="14" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="TUBE NAME"  value="BV510 Stained Control" />
+         <Keyword name="$SRC"  value="Compensation Controls" />
+         <Keyword name="EXPERIMENT NAME"  value="Experiment_001" />
+         <Keyword name="GUID"  value="8189144b-f646-4973-b029-4f37b3282665" />
+         <Keyword name="$DATE"  value="14-SEP-2019" />
+         <Keyword name="$BTIM"  value="21:57:28" />
+         <Keyword name="$ETIM"  value="21:57:36" />
+         <Keyword name="$CYT"  value="LSRFortessa" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="CYTNUM"  value="1" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="EXPORT USER NAME"  value="67901" />
+         <Keyword name="EXPORT TIME"  value="14-SEP-2019-22:08:23" />
+         <Keyword name="$OP"  value="67901" />
+         <Keyword name="FSC ASF"  value="0.79" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1ASF"  value="0.95" />
+         <Keyword name="LASER2NAME"  value="YelGreen" />
+         <Keyword name="LASER2DELAY"  value="-64.36" />
+         <Keyword name="LASER2ASF"  value="0.67" />
+         <Keyword name="LASER3NAME"  value="Red" />
+         <Keyword name="LASER3DELAY"  value="-31.94" />
+         <Keyword name="LASER3ASF"  value="0.83" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER4DELAY"  value="29.23" />
+         <Keyword name="LASER4ASF"  value="0.81" />
+         <Keyword name="LASER5NAME"  value="UV" />
+         <Keyword name="LASER5DELAY"  value="60.99" />
+         <Keyword name="LASER5ASF"  value="1.08" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="SPILL"  value="7,PerCP-Cy5-5-A,tdTomato-A,PE-Cy7-A,APC-A,APC-Cy7-A,BV510-A,BUV 395-A,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1V"  value="250" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2V"  value="250" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3V"  value="250" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4V"  value="350" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5V"  value="350" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6V"  value="350" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="$P7N"  value="PerCP-Cy5-5-A" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7V"  value="735" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="P7BS"  value="448" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$P8N"  value="tdTomato-A" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8V"  value="550" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="P8BS"  value="108" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="$P9N"  value="PE-Cy7-A" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9V"  value="450" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="P9BS"  value="70" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="APC-A" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10V"  value="600" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="P10BS"  value="30" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="$P11N"  value="APC-Cy7-A" />
+         <Keyword name="$P11R"  value="262144" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11V"  value="625" />
+         <Keyword name="$P11G"  value="1.0" />
+         <Keyword name="P11DISPLAY"  value="LOG" />
+         <Keyword name="P11BS"  value="266" />
+         <Keyword name="P11MS"  value="0" />
+         <Keyword name="$P12N"  value="BV510-A" />
+         <Keyword name="$P12R"  value="262144" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12V"  value="625" />
+         <Keyword name="$P12G"  value="1.0" />
+         <Keyword name="P12DISPLAY"  value="LOG" />
+         <Keyword name="P12BS"  value="1448" />
+         <Keyword name="P12MS"  value="0" />
+         <Keyword name="$P13N"  value="BUV 395-A" />
+         <Keyword name="$P13R"  value="262144" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13V"  value="550" />
+         <Keyword name="$P13G"  value="1.0" />
+         <Keyword name="P13DISPLAY"  value="LOG" />
+         <Keyword name="P13BS"  value="105" />
+         <Keyword name="P13MS"  value="0" />
+         <Keyword name="$P14N"  value="Time" />
+         <Keyword name="$P14R"  value="262144" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14G"  value="0.01" />
+         <Keyword name="P14BS"  value="0" />
+         <Keyword name="P14MS"  value="0" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS" />
+         <Keyword name="CST BEADS LOT ID"  value="83326" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="FCCF Fortessa 1 5 Laser Corrected" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2019-02-20T15:20:42-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2019-09-10T09:29:37-04:00" />
+         <Keyword name="CST BASELINE DATE"  value="2019-08-28T12:14:53-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2019-09-11T09:29:37-04:00" />
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+         <Keyword name="$P11S"  value="" />
+         <Keyword name="$P12S"  value="" />
+         <Keyword name="$P13S"  value="" />
+         <Keyword name="$P14S"  value="" />
+       </Keywords>
+       <SampleNode name="Compensation Controls_BV510 Stained Control_007.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="2212"  sampleID="4" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="0"  width="0"  height="0"  displayed="0"  panelState="" />
+           </GraphEnvironment>
+         </Graph>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/Users/lintian/Downloads/FlowCytometry_tSNE/FACS_Files/Compensation%20Controls_PE-Cy7%20Stained%20Control_004.fcs"  sampleID="5" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PerCP-Cy5-5-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="tdTomato-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PE-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BV510-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BUV 395-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0.7572718154"  transforms:maxRange="10"  gain="0.0125376128" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+       </Transformations>
+       <Keywords>
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINDATA"  value="2971" />
+         <Keyword name="$ENDDATA"  value="122306             " />
+         <Keyword name="$FIL"  value="Compensation Controls_PE-Cy7 Stained Control_004.fcs" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$TOT"  value="2131               " />
+         <Keyword name="$PAR"  value="14" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="TUBE NAME"  value="PE-Cy7 Stained Control" />
+         <Keyword name="$SRC"  value="Compensation Controls" />
+         <Keyword name="EXPERIMENT NAME"  value="Experiment_001" />
+         <Keyword name="GUID"  value="f2e18d5f-1225-46a9-b32b-6691af95a451" />
+         <Keyword name="$DATE"  value="14-SEP-2019" />
+         <Keyword name="$BTIM"  value="21:55:30" />
+         <Keyword name="$ETIM"  value="21:55:40" />
+         <Keyword name="$CYT"  value="LSRFortessa" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="CYTNUM"  value="1" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="EXPORT USER NAME"  value="67901" />
+         <Keyword name="EXPORT TIME"  value="14-SEP-2019-22:08:23" />
+         <Keyword name="$OP"  value="67901" />
+         <Keyword name="FSC ASF"  value="0.79" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1ASF"  value="0.95" />
+         <Keyword name="LASER2NAME"  value="YelGreen" />
+         <Keyword name="LASER2DELAY"  value="-64.36" />
+         <Keyword name="LASER2ASF"  value="0.67" />
+         <Keyword name="LASER3NAME"  value="Red" />
+         <Keyword name="LASER3DELAY"  value="-31.94" />
+         <Keyword name="LASER3ASF"  value="0.83" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER4DELAY"  value="29.23" />
+         <Keyword name="LASER4ASF"  value="0.81" />
+         <Keyword name="LASER5NAME"  value="UV" />
+         <Keyword name="LASER5DELAY"  value="60.99" />
+         <Keyword name="LASER5ASF"  value="1.08" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="SPILL"  value="7,PerCP-Cy5-5-A,tdTomato-A,PE-Cy7-A,APC-A,APC-Cy7-A,BV510-A,BUV 395-A,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1V"  value="250" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2V"  value="250" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3V"  value="250" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4V"  value="350" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5V"  value="350" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6V"  value="350" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="$P7N"  value="PerCP-Cy5-5-A" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7V"  value="735" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="P7BS"  value="494" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$P8N"  value="tdTomato-A" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8V"  value="550" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="P8BS"  value="168" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="$P9N"  value="PE-Cy7-A" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9V"  value="450" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="P9BS"  value="353" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="APC-A" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10V"  value="600" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="P10BS"  value="25" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="$P11N"  value="APC-Cy7-A" />
+         <Keyword name="$P11R"  value="262144" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11V"  value="625" />
+         <Keyword name="$P11G"  value="1.0" />
+         <Keyword name="P11DISPLAY"  value="LOG" />
+         <Keyword name="P11BS"  value="371" />
+         <Keyword name="P11MS"  value="0" />
+         <Keyword name="$P12N"  value="BV510-A" />
+         <Keyword name="$P12R"  value="262144" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12V"  value="625" />
+         <Keyword name="$P12G"  value="1.0" />
+         <Keyword name="P12DISPLAY"  value="LOG" />
+         <Keyword name="P12BS"  value="532" />
+         <Keyword name="P12MS"  value="0" />
+         <Keyword name="$P13N"  value="BUV 395-A" />
+         <Keyword name="$P13R"  value="262144" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13V"  value="550" />
+         <Keyword name="$P13G"  value="1.0" />
+         <Keyword name="P13DISPLAY"  value="LOG" />
+         <Keyword name="P13BS"  value="116" />
+         <Keyword name="P13MS"  value="0" />
+         <Keyword name="$P14N"  value="Time" />
+         <Keyword name="$P14R"  value="262144" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14G"  value="0.01" />
+         <Keyword name="P14BS"  value="0" />
+         <Keyword name="P14MS"  value="0" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS" />
+         <Keyword name="CST BEADS LOT ID"  value="83326" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="FCCF Fortessa 1 5 Laser Corrected" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2019-02-20T15:20:42-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2019-09-10T09:29:37-04:00" />
+         <Keyword name="CST BASELINE DATE"  value="2019-08-28T12:14:53-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2019-09-11T09:29:37-04:00" />
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+         <Keyword name="$P11S"  value="" />
+         <Keyword name="$P12S"  value="" />
+         <Keyword name="$P13S"  value="" />
+         <Keyword name="$P14S"  value="" />
+       </Keywords>
+       <SampleNode name="Compensation Controls_PE-Cy7 Stained Control_004.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="2131"  sampleID="5" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="0"  width="0"  height="0"  displayed="0"  panelState="" />
+           </GraphEnvironment>
+         </Graph>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/Users/lintian/Downloads/FlowCytometry_tSNE/FACS_Files/Compensation%20Controls_PerCP-Cy5-5%20Stained%20Control_002.fcs"  sampleID="6" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PerCP-Cy5-5-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="tdTomato-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PE-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BV510-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BUV 395-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0.537510779"  transforms:maxRange="22"  gain="0.010539427" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+       </Transformations>
+       <Keywords>
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINDATA"  value="2980" />
+         <Keyword name="$ENDDATA"  value="161067             " />
+         <Keyword name="$FIL"  value="Compensation Controls_PerCP-Cy5-5 Stained Control_002.fcs" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$TOT"  value="2823               " />
+         <Keyword name="$PAR"  value="14" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="TUBE NAME"  value="PerCP-Cy5-5 Stained Control" />
+         <Keyword name="$SRC"  value="Compensation Controls" />
+         <Keyword name="EXPERIMENT NAME"  value="Experiment_001" />
+         <Keyword name="GUID"  value="abb186b1-8555-4472-a22c-b7cd2a91000a" />
+         <Keyword name="$DATE"  value="14-SEP-2019" />
+         <Keyword name="$BTIM"  value="21:53:58" />
+         <Keyword name="$ETIM"  value="21:54:20" />
+         <Keyword name="$CYT"  value="LSRFortessa" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="CYTNUM"  value="1" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="EXPORT USER NAME"  value="67901" />
+         <Keyword name="EXPORT TIME"  value="14-SEP-2019-22:08:23" />
+         <Keyword name="$OP"  value="67901" />
+         <Keyword name="FSC ASF"  value="0.79" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1ASF"  value="0.95" />
+         <Keyword name="LASER2NAME"  value="YelGreen" />
+         <Keyword name="LASER2DELAY"  value="-64.36" />
+         <Keyword name="LASER2ASF"  value="0.67" />
+         <Keyword name="LASER3NAME"  value="Red" />
+         <Keyword name="LASER3DELAY"  value="-31.94" />
+         <Keyword name="LASER3ASF"  value="0.83" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER4DELAY"  value="29.23" />
+         <Keyword name="LASER4ASF"  value="0.81" />
+         <Keyword name="LASER5NAME"  value="UV" />
+         <Keyword name="LASER5DELAY"  value="60.99" />
+         <Keyword name="LASER5ASF"  value="1.08" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="SPILL"  value="7,PerCP-Cy5-5-A,tdTomato-A,PE-Cy7-A,APC-A,APC-Cy7-A,BV510-A,BUV 395-A,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1V"  value="250" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2V"  value="250" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3V"  value="250" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4V"  value="350" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5V"  value="350" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6V"  value="350" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="$P7N"  value="PerCP-Cy5-5-A" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7V"  value="735" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="P7BS"  value="736" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$P8N"  value="tdTomato-A" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8V"  value="550" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="P8BS"  value="115" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="$P9N"  value="PE-Cy7-A" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9V"  value="450" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="P9BS"  value="56" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="APC-A" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10V"  value="600" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="P10BS"  value="85" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="$P11N"  value="APC-Cy7-A" />
+         <Keyword name="$P11R"  value="262144" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11V"  value="625" />
+         <Keyword name="$P11G"  value="1.0" />
+         <Keyword name="P11DISPLAY"  value="LOG" />
+         <Keyword name="P11BS"  value="240" />
+         <Keyword name="P11MS"  value="0" />
+         <Keyword name="$P12N"  value="BV510-A" />
+         <Keyword name="$P12R"  value="262144" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12V"  value="625" />
+         <Keyword name="$P12G"  value="1.0" />
+         <Keyword name="P12DISPLAY"  value="LOG" />
+         <Keyword name="P12BS"  value="538" />
+         <Keyword name="P12MS"  value="0" />
+         <Keyword name="$P13N"  value="BUV 395-A" />
+         <Keyword name="$P13R"  value="262144" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13V"  value="550" />
+         <Keyword name="$P13G"  value="1.0" />
+         <Keyword name="P13DISPLAY"  value="LOG" />
+         <Keyword name="P13BS"  value="127" />
+         <Keyword name="P13MS"  value="0" />
+         <Keyword name="$P14N"  value="Time" />
+         <Keyword name="$P14R"  value="262144" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14G"  value="0.01" />
+         <Keyword name="P14BS"  value="0" />
+         <Keyword name="P14MS"  value="0" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS" />
+         <Keyword name="CST BEADS LOT ID"  value="83326" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="FCCF Fortessa 1 5 Laser Corrected" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2019-02-20T15:20:42-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2019-09-10T09:29:37-04:00" />
+         <Keyword name="CST BASELINE DATE"  value="2019-08-28T12:14:53-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2019-09-11T09:29:37-04:00" />
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+         <Keyword name="$P11S"  value="" />
+         <Keyword name="$P12S"  value="" />
+         <Keyword name="$P13S"  value="" />
+         <Keyword name="$P14S"  value="" />
+       </Keywords>
+       <SampleNode name="Compensation Controls_PerCP-Cy5-5 Stained Control_002.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="2823"  sampleID="6" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="0"  width="0"  height="0"  displayed="0"  panelState="" />
+           </GraphEnvironment>
+         </Graph>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/Users/lintian/Downloads/FlowCytometry_tSNE/FACS_Files/Compensation%20Controls_tdTomato%20Stained%20Control_003.fcs"  sampleID="7" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PerCP-Cy5-5-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="tdTomato-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PE-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BV510-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BUV 395-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0.4288266825"  transforms:maxRange="18"  gain="0.0107206671" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+       </Transformations>
+       <Keywords>
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINDATA"  value="2977" />
+         <Keyword name="$ENDDATA"  value="120016             " />
+         <Keyword name="$FIL"  value="Compensation Controls_tdTomato Stained Control_003.fcs" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$TOT"  value="2090               " />
+         <Keyword name="$PAR"  value="14" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="TUBE NAME"  value="tdTomato Stained Control" />
+         <Keyword name="$SRC"  value="Compensation Controls" />
+         <Keyword name="EXPERIMENT NAME"  value="Experiment_001" />
+         <Keyword name="GUID"  value="c7750a93-74ea-46c9-a37a-e9e06e680d18" />
+         <Keyword name="$DATE"  value="14-SEP-2019" />
+         <Keyword name="$BTIM"  value="21:54:45" />
+         <Keyword name="$ETIM"  value="21:55:03" />
+         <Keyword name="$CYT"  value="LSRFortessa" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="CYTNUM"  value="1" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="EXPORT USER NAME"  value="67901" />
+         <Keyword name="EXPORT TIME"  value="14-SEP-2019-22:08:23" />
+         <Keyword name="$OP"  value="67901" />
+         <Keyword name="FSC ASF"  value="0.79" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1ASF"  value="0.95" />
+         <Keyword name="LASER2NAME"  value="YelGreen" />
+         <Keyword name="LASER2DELAY"  value="-64.36" />
+         <Keyword name="LASER2ASF"  value="0.67" />
+         <Keyword name="LASER3NAME"  value="Red" />
+         <Keyword name="LASER3DELAY"  value="-31.94" />
+         <Keyword name="LASER3ASF"  value="0.83" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER4DELAY"  value="29.23" />
+         <Keyword name="LASER4ASF"  value="0.81" />
+         <Keyword name="LASER5NAME"  value="UV" />
+         <Keyword name="LASER5DELAY"  value="60.99" />
+         <Keyword name="LASER5ASF"  value="1.08" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="SPILL"  value="7,PerCP-Cy5-5-A,tdTomato-A,PE-Cy7-A,APC-A,APC-Cy7-A,BV510-A,BUV 395-A,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1V"  value="250" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2V"  value="250" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3V"  value="250" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4V"  value="350" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5V"  value="350" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6V"  value="350" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="$P7N"  value="PerCP-Cy5-5-A" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7V"  value="735" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="P7BS"  value="1077" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$P8N"  value="tdTomato-A" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8V"  value="550" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="P8BS"  value="10560" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="$P9N"  value="PE-Cy7-A" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9V"  value="450" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="P9BS"  value="96" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="APC-A" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10V"  value="600" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="P10BS"  value="61" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="$P11N"  value="APC-Cy7-A" />
+         <Keyword name="$P11R"  value="262144" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11V"  value="625" />
+         <Keyword name="$P11G"  value="1.0" />
+         <Keyword name="P11DISPLAY"  value="LOG" />
+         <Keyword name="P11BS"  value="271" />
+         <Keyword name="P11MS"  value="0" />
+         <Keyword name="$P12N"  value="BV510-A" />
+         <Keyword name="$P12R"  value="262144" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12V"  value="625" />
+         <Keyword name="$P12G"  value="1.0" />
+         <Keyword name="P12DISPLAY"  value="LOG" />
+         <Keyword name="P12BS"  value="524" />
+         <Keyword name="P12MS"  value="0" />
+         <Keyword name="$P13N"  value="BUV 395-A" />
+         <Keyword name="$P13R"  value="262144" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13V"  value="550" />
+         <Keyword name="$P13G"  value="1.0" />
+         <Keyword name="P13DISPLAY"  value="LOG" />
+         <Keyword name="P13BS"  value="119" />
+         <Keyword name="P13MS"  value="0" />
+         <Keyword name="$P14N"  value="Time" />
+         <Keyword name="$P14R"  value="262144" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14G"  value="0.01" />
+         <Keyword name="P14BS"  value="0" />
+         <Keyword name="P14MS"  value="0" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS" />
+         <Keyword name="CST BEADS LOT ID"  value="83326" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="FCCF Fortessa 1 5 Laser Corrected" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2019-02-20T15:20:42-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2019-09-10T09:29:37-04:00" />
+         <Keyword name="CST BASELINE DATE"  value="2019-08-28T12:14:53-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2019-09-11T09:29:37-04:00" />
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+         <Keyword name="$P11S"  value="" />
+         <Keyword name="$P12S"  value="" />
+         <Keyword name="$P13S"  value="" />
+         <Keyword name="$P14S"  value="" />
+       </Keywords>
+       <SampleNode name="Compensation Controls_tdTomato Stained Control_003.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="2090"  sampleID="7" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="0"  width="0"  height="0"  displayed="0"  panelState="" />
+           </GraphEnvironment>
+         </Graph>
+       </SampleNode>
+     </Sample>
+     <Sample>
+       <DataSet uri="file:/Users/lintian/Downloads/FlowCytometry_tSNE/FACS_Files/Compensation%20Controls_Unstained%20Control_001.fcs"  sampleID="8" />
+       <Transformations>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="FSC-W" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-A" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-H" />
+         </transforms:linear>
+         <transforms:linear transforms:minRange="0"  transforms:maxRange="262144"  gain="1" >
+           <data-type:parameter data-type:name="SSC-W" />
+         </transforms:linear>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PerCP-Cy5-5-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="tdTomato-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="PE-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="APC-Cy7-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BV510-A" />
+         </transforms:biex>
+         <transforms:biex transforms:length="256"  transforms:maxRange="262144"  transforms:neg="0"  transforms:width="-100"  transforms:pos="4.418539922" >
+           <data-type:parameter data-type:name="BUV 395-A" />
+         </transforms:biex>
+         <transforms:linear transforms:minRange="0.4887056642"  transforms:maxRange="42"  gain="0.0102454018" >
+           <data-type:parameter data-type:name="Time" />
+         </transforms:linear>
+       </Transformations>
+       <Keywords>
+         <Keyword name="FJ_FCS_VERSION"  value="3" />
+         <Keyword name="$BEGINANALYSIS"  value="0" />
+         <Keyword name="$ENDANALYSIS"  value="0" />
+         <Keyword name="$BEGINSTEXT"  value="0" />
+         <Keyword name="$ENDSTEXT"  value="0" />
+         <Keyword name="$BEGINDATA"  value="2960" />
+         <Keyword name="$ENDDATA"  value="116247             " />
+         <Keyword name="$FIL"  value="Compensation Controls_Unstained Control_001.fcs" />
+         <Keyword name="$SYS"  value="Windows 7 6.1" />
+         <Keyword name="$TOT"  value="2023               " />
+         <Keyword name="$PAR"  value="14" />
+         <Keyword name="$MODE"  value="L" />
+         <Keyword name="$BYTEORD"  value="4,3,2,1" />
+         <Keyword name="$DATATYPE"  value="F" />
+         <Keyword name="$NEXTDATA"  value="0" />
+         <Keyword name="CREATOR"  value="BD FACSDiva Software Version 8.0.1" />
+         <Keyword name="TUBE NAME"  value="Unstained Control" />
+         <Keyword name="$SRC"  value="Compensation Controls" />
+         <Keyword name="EXPERIMENT NAME"  value="Experiment_001" />
+         <Keyword name="GUID"  value="513faf47-ebbf-4445-80b2-4cfd9ea43d02" />
+         <Keyword name="$DATE"  value="14-SEP-2019" />
+         <Keyword name="$BTIM"  value="21:52:23" />
+         <Keyword name="$ETIM"  value="21:53:05" />
+         <Keyword name="$CYT"  value="LSRFortessa" />
+         <Keyword name="SETTINGS"  value="Cytometer" />
+         <Keyword name="CYTNUM"  value="1" />
+         <Keyword name="WINDOW EXTENSION"  value="10.00" />
+         <Keyword name="EXPORT USER NAME"  value="67901" />
+         <Keyword name="EXPORT TIME"  value="14-SEP-2019-22:08:23" />
+         <Keyword name="$OP"  value="67901" />
+         <Keyword name="FSC ASF"  value="0.79" />
+         <Keyword name="AUTOBS"  value="TRUE" />
+         <Keyword name="$INST"  value=" " />
+         <Keyword name="LASER1NAME"  value="Blue" />
+         <Keyword name="LASER1DELAY"  value="0.00" />
+         <Keyword name="LASER1ASF"  value="0.95" />
+         <Keyword name="LASER2NAME"  value="YelGreen" />
+         <Keyword name="LASER2DELAY"  value="-64.36" />
+         <Keyword name="LASER2ASF"  value="0.67" />
+         <Keyword name="LASER3NAME"  value="Red" />
+         <Keyword name="LASER3DELAY"  value="-31.94" />
+         <Keyword name="LASER3ASF"  value="0.83" />
+         <Keyword name="LASER4NAME"  value="Violet" />
+         <Keyword name="LASER4DELAY"  value="29.23" />
+         <Keyword name="LASER4ASF"  value="0.81" />
+         <Keyword name="LASER5NAME"  value="UV" />
+         <Keyword name="LASER5DELAY"  value="60.99" />
+         <Keyword name="LASER5ASF"  value="1.08" />
+         <Keyword name="$TIMESTEP"  value="0.01" />
+         <Keyword name="SPILL"  value="7,PerCP-Cy5-5-A,tdTomato-A,PE-Cy7-A,APC-A,APC-Cy7-A,BV510-A,BUV 395-A,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1" />
+         <Keyword name="THRESHOLD"  value="FSC,5000" />
+         <Keyword name="$P1N"  value="FSC-A" />
+         <Keyword name="$P1R"  value="262144" />
+         <Keyword name="$P1B"  value="32" />
+         <Keyword name="$P1E"  value="0,0" />
+         <Keyword name="$P1V"  value="250" />
+         <Keyword name="$P1G"  value="1.0" />
+         <Keyword name="P1DISPLAY"  value="LIN" />
+         <Keyword name="P1BS"  value="0" />
+         <Keyword name="P1MS"  value="0" />
+         <Keyword name="$P2N"  value="FSC-H" />
+         <Keyword name="$P2R"  value="262144" />
+         <Keyword name="$P2B"  value="32" />
+         <Keyword name="$P2E"  value="0,0" />
+         <Keyword name="$P2V"  value="250" />
+         <Keyword name="$P2G"  value="1.0" />
+         <Keyword name="P2DISPLAY"  value="LIN" />
+         <Keyword name="P2BS"  value="0" />
+         <Keyword name="P2MS"  value="0" />
+         <Keyword name="$P3N"  value="FSC-W" />
+         <Keyword name="$P3R"  value="262144" />
+         <Keyword name="$P3B"  value="32" />
+         <Keyword name="$P3E"  value="0,0" />
+         <Keyword name="$P3V"  value="250" />
+         <Keyword name="$P3G"  value="1.0" />
+         <Keyword name="P3BS"  value="-1" />
+         <Keyword name="P3MS"  value="0" />
+         <Keyword name="$P4N"  value="SSC-A" />
+         <Keyword name="$P4R"  value="262144" />
+         <Keyword name="$P4B"  value="32" />
+         <Keyword name="$P4E"  value="0,0" />
+         <Keyword name="$P4V"  value="350" />
+         <Keyword name="$P4G"  value="1.0" />
+         <Keyword name="P4DISPLAY"  value="LIN" />
+         <Keyword name="P4BS"  value="0" />
+         <Keyword name="P4MS"  value="0" />
+         <Keyword name="$P5N"  value="SSC-H" />
+         <Keyword name="$P5R"  value="262144" />
+         <Keyword name="$P5B"  value="32" />
+         <Keyword name="$P5E"  value="0,0" />
+         <Keyword name="$P5V"  value="350" />
+         <Keyword name="$P5G"  value="1.0" />
+         <Keyword name="P5DISPLAY"  value="LIN" />
+         <Keyword name="P5BS"  value="0" />
+         <Keyword name="P5MS"  value="0" />
+         <Keyword name="$P6N"  value="SSC-W" />
+         <Keyword name="$P6R"  value="262144" />
+         <Keyword name="$P6B"  value="32" />
+         <Keyword name="$P6E"  value="0,0" />
+         <Keyword name="$P6V"  value="350" />
+         <Keyword name="$P6G"  value="1.0" />
+         <Keyword name="P6BS"  value="-1" />
+         <Keyword name="P6MS"  value="0" />
+         <Keyword name="$P7N"  value="PerCP-Cy5-5-A" />
+         <Keyword name="$P7R"  value="262144" />
+         <Keyword name="$P7B"  value="32" />
+         <Keyword name="$P7E"  value="0,0" />
+         <Keyword name="$P7V"  value="735" />
+         <Keyword name="$P7G"  value="1.0" />
+         <Keyword name="P7DISPLAY"  value="LOG" />
+         <Keyword name="P7BS"  value="468" />
+         <Keyword name="P7MS"  value="0" />
+         <Keyword name="$P8N"  value="tdTomato-A" />
+         <Keyword name="$P8R"  value="262144" />
+         <Keyword name="$P8B"  value="32" />
+         <Keyword name="$P8E"  value="0,0" />
+         <Keyword name="$P8V"  value="550" />
+         <Keyword name="$P8G"  value="1.0" />
+         <Keyword name="P8DISPLAY"  value="LOG" />
+         <Keyword name="P8BS"  value="146" />
+         <Keyword name="P8MS"  value="0" />
+         <Keyword name="$P9N"  value="PE-Cy7-A" />
+         <Keyword name="$P9R"  value="262144" />
+         <Keyword name="$P9B"  value="32" />
+         <Keyword name="$P9E"  value="0,0" />
+         <Keyword name="$P9V"  value="450" />
+         <Keyword name="$P9G"  value="1.0" />
+         <Keyword name="P9DISPLAY"  value="LOG" />
+         <Keyword name="P9BS"  value="57" />
+         <Keyword name="P9MS"  value="0" />
+         <Keyword name="$P10N"  value="APC-A" />
+         <Keyword name="$P10R"  value="262144" />
+         <Keyword name="$P10B"  value="32" />
+         <Keyword name="$P10E"  value="0,0" />
+         <Keyword name="$P10V"  value="600" />
+         <Keyword name="$P10G"  value="1.0" />
+         <Keyword name="P10DISPLAY"  value="LOG" />
+         <Keyword name="P10BS"  value="93" />
+         <Keyword name="P10MS"  value="0" />
+         <Keyword name="$P11N"  value="APC-Cy7-A" />
+         <Keyword name="$P11R"  value="262144" />
+         <Keyword name="$P11B"  value="32" />
+         <Keyword name="$P11E"  value="0,0" />
+         <Keyword name="$P11V"  value="625" />
+         <Keyword name="$P11G"  value="1.0" />
+         <Keyword name="P11DISPLAY"  value="LOG" />
+         <Keyword name="P11BS"  value="263" />
+         <Keyword name="P11MS"  value="0" />
+         <Keyword name="$P12N"  value="BV510-A" />
+         <Keyword name="$P12R"  value="262144" />
+         <Keyword name="$P12B"  value="32" />
+         <Keyword name="$P12E"  value="0,0" />
+         <Keyword name="$P12V"  value="625" />
+         <Keyword name="$P12G"  value="1.0" />
+         <Keyword name="P12DISPLAY"  value="LOG" />
+         <Keyword name="P12BS"  value="558" />
+         <Keyword name="P12MS"  value="0" />
+         <Keyword name="$P13N"  value="BUV 395-A" />
+         <Keyword name="$P13R"  value="262144" />
+         <Keyword name="$P13B"  value="32" />
+         <Keyword name="$P13E"  value="0,0" />
+         <Keyword name="$P13V"  value="550" />
+         <Keyword name="$P13G"  value="1.0" />
+         <Keyword name="P13DISPLAY"  value="LOG" />
+         <Keyword name="P13BS"  value="169" />
+         <Keyword name="P13MS"  value="0" />
+         <Keyword name="$P14N"  value="Time" />
+         <Keyword name="$P14R"  value="262144" />
+         <Keyword name="$P14B"  value="32" />
+         <Keyword name="$P14E"  value="0,0" />
+         <Keyword name="$P14G"  value="0.01" />
+         <Keyword name="P14BS"  value="0" />
+         <Keyword name="P14MS"  value="0" />
+         <Keyword name="CST SETUP STATUS"  value="SUCCESS" />
+         <Keyword name="CST BEADS LOT ID"  value="83326" />
+         <Keyword name="CYTOMETER CONFIG NAME"  value="FCCF Fortessa 1 5 Laser Corrected" />
+         <Keyword name="CYTOMETER CONFIG CREATE DATE"  value="2019-02-20T15:20:42-05:00" />
+         <Keyword name="CST SETUP DATE"  value="2019-09-10T09:29:37-04:00" />
+         <Keyword name="CST BASELINE DATE"  value="2019-08-28T12:14:53-04:00" />
+         <Keyword name="CST BEADS EXPIRED"  value="False" />
+         <Keyword name="CST PERFORMANCE EXPIRED"  value="2019-09-11T09:29:37-04:00" />
+         <Keyword name="CST REGULATORY STATUS"  value="RUO Performance Check" />
+         <Keyword name="$P1S"  value="" />
+         <Keyword name="$P2S"  value="" />
+         <Keyword name="$P3S"  value="" />
+         <Keyword name="$P4S"  value="" />
+         <Keyword name="$P5S"  value="" />
+         <Keyword name="$P6S"  value="" />
+         <Keyword name="$P7S"  value="" />
+         <Keyword name="$P8S"  value="" />
+         <Keyword name="$P9S"  value="" />
+         <Keyword name="$P10S"  value="" />
+         <Keyword name="$P11S"  value="" />
+         <Keyword name="$P12S"  value="" />
+         <Keyword name="$P13S"  value="" />
+         <Keyword name="$P14S"  value="" />
+       </Keywords>
+       <SampleNode name="Compensation Controls_Unstained Control_001.fcs"  annotation=""  owningGroup=""  expanded="1"  sortPriority="10"  count="2023"  sampleID="8" >
+         <Graph smoothing="0"  backColor="#ffffff"  foreColor="#000000"  type="Pseudocolor"  fast="1" >
+           <Axis dimension="x"  name="FSC-A"  label=""  auto="auto" />
+           <Axis dimension="y"  name="SSC-A"  label=""  auto="auto" />
+           <GraphSettings level="5%"  smoothingHighResolution="1"  contourHighResolution="1"  histogramSmoothingCount="0"  graphResolution="256"  showOutliers="0"  drawLargeDots="0"  dotsToDraw="8000"  tint="le.chartfill.tinted.40"  lineWeight="le.lineweight.normal"  lineStyle="le.linestyle.solid" />
+           <GraphEnvironment showGrid="0"  showAxes="tnlTNL"  showGates="1"  showFreqOnPlots="1"  showGateNameOnPlots="1"  showMedians="0"  showUncomped="0"  addEventParam="0"  lastYAxisName="" >
+             <TextTraits font="SansSerif"  size="11"  name="Labels"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="11"  name="LayoutGates"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Numbers"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <TextTraits font="SansSerif"  size="9"  name="Legend"  style="plain"  color="#000000"  background="#00ffffff"  just="left" />
+             <WindowPosition x="0"  y="0"  width="0"  height="0"  displayed="0"  panelState="" />
+           </GraphEnvironment>
+         </Graph>
+       </SampleNode>
+     </Sample>
+   </SampleList>
+   <TableEditor title="FlowJo Tables: FlowJo.wsp"  current="Table" >
+     <Table name="Table"  outputFile="file:/Users/lintian/Table"  color="#00ffffff"  isBatch="0"  quickclose="0"  destination="toDisplay"  outputFormat="fj.document.type.table"  autoColumnName="" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+       <PageSection sectionName="header" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;NBSP&amp;NBSP&amp;NBSP&amp;NBSP&lt;IMG SRC=&quot;file:/private/var/folders/jy/179hykvj3554stmz7m21f5d80000gp/T/AppTranslocation/435B9615-92F2-483B-A199-C9F2DC45381C/d/FlowJo.app/Contents/Resources/Java/images/fj_icon.png&quot;&gt;&lt;/IMG&gt;&lt;br/&gt;FlowJo, LLC&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;Page &lt;PageNumber/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <PageSection sectionName="footer" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;  valign=&quot;bottom&quot;&gt;&lt;LongDate/&gt;&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;bottom&quot;&gt;&lt;Version/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <Iteration iterationType="SAMPLE"  iterationValue="1"  iterationKeyword=""  discriminator=""  panelSize="1"  groupName="workspaceSelection" />
+     </Table>
+   </TableEditor>
+   <LayoutEditor title="FlowJo Layouts: FlowJo.wsp"  current="Layout"  showGrid="0"  showPageBreaks="0"  showGuides="0"  showDebugOutput="0" >
+     <Layout name="Layout"  outputFile="file:/Users/lintian/Layout"  color="#00ffffff"  isBatch="0"  showGrid="0"  showRulers="1"  showDebugOutput="0"  showGuides="0"  showPageBreaks="1"  scale="1" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+       <PageSection sectionName="header" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&amp;NBSP&amp;NBSP&amp;NBSP&amp;NBSP&lt;IMG SRC=&quot;file:/private/var/folders/jy/179hykvj3554stmz7m21f5d80000gp/T/AppTranslocation/435B9615-92F2-483B-A199-C9F2DC45381C/d/FlowJo.app/Contents/Resources/Java/images/fj_icon.png&quot;&gt;&lt;/IMG&gt;&lt;br/&gt;FlowJo, LLC&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;top&quot;&gt;Page &lt;PageNumber/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <PageSection sectionName="footer" >&lt;table width=&quot;100%&quot;&gt;&lt;tr&gt;&lt;td align=&quot;left&quot;  valign=&quot;bottom&quot;&gt;&lt;LongDate/&gt;&lt;/td&gt;&lt;td align=&quot;right&quot; valign=&quot;bottom&quot;&gt;&lt;Version/&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</PageSection>
+       <Iteration iterationType="OFF"  iterationValue="1"  iterationKeyword=""  discriminator=""  panelSize="1"  groupName="workspaceSelection" />
+       <BatchSettings useCurrentGroup="1"  length="3"  name=""  order="ACROSS"  direction="COLUMNS"  append="0"  destination="toLayout"  separatePages="0"  launchApp="1"  header="0"  footer="0"  commandLineBatch="0" />
+       <FigList/>
+     </Layout>
+     <WindowPosition x="0"  y="2"  width="900"  height="600" />
+   </LayoutEditor>
+   <Scripts>
+     <Script lang="text/javascript"  name="New Script    " />
+   </Scripts>
+   <Experiment>
+     <PlateModel name="Plate"  color="#00ffffff"  rows="8"  columns="12"  plateID="00000"  expID="000-00000"  format="Plate"  showNEntries="1"  peHeatmap="1"  peShowEnums="1"  peThickBorders="1" >
+       <PrintLayout flipPattern0="0"  rows="1"  columns="1"  padding="36"  header=""  footer=""  headerActive="0"  footerActive="0"  scalingMode="fj.print.scale.none"  scaling="1"  orientation="1"  width="612"  height="792"  imageableX="72"  imageableY="72"  imageableWidth="468"  imageableHeight="648" />
+     </PlateModel>
+     <PlateEditorState>
+       <KeywordList>
+         <Keyword attribute="Treatment &quot;Drug A&quot;"  value="10ug/L" />
+         <Keyword attribute="Assay"  value="GFP Reporter" />
+         <Keyword attribute="Time point"  value="24hr" />
+       </KeywordList>
+       <StagingArea>
+         <StagingWell/>
+         <StagingWell/>
+         <StagingWell/>
+         <StagingWell/>
+       </StagingArea>
+     </PlateEditorState>
+   </Experiment>
+   <Exports/>
+   <SOPS/>
+   <experiment/>
+   <weights/>
+ </Workspace>
