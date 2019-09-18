@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 t-SNE Analysis for Flow Cytometry Data
 ======================================
 
@@ -47,12 +52,15 @@ Choose **File** -> **Export/Concatenate** -> **Export / Concatenate Populations*
 ```{r}
 # install.packages("Rtsne")
 library(Rtsne)
-data2 <- data[, colnames_proj]
-class(data2) <- "numeric"
+FACS <- read.csv("FACS_Files/export_Downsample.csv")
+FACS2 <- FACS[, grepl("Comp", colnames(FACS))]
+FACS3 <- FACS2[, -which(colnames(FACS2) == "Comp.BUV.395.A")]
+FACS3.dm <- data.matrix(FACS3)
+
 set.seed(123)  # set random seed
-rtsne_out <- Rtsne(data2, pca = FALSE, verbose = TRUE, perplexity = 100) ## The larger perplexity, the longer it takes to finished analysis. But the ponts will be more separated.
+rtsne_out <- Rtsne(FACS3.dm, pca = FALSE, verbose = TRUE, perplexity = 100) ## The larger perplexity, the longer it takes to finished analysis. But the ponts will be more separated.
 names(rtsne_out)
-data_df <- data.frame(cellType=data[, 1], tSNE1=rtsne_out$Y[, 1], tSNE2=rtsne_out$Y[, 2])
+FACS_tSNE_df <- cbind(FACS3, data.frame(tSNE1=rtsne_out$Y[, 1], tSNE2=rtsne_out$Y[, 2]))
 ```
 
 ### Dimention Reduction
@@ -60,38 +68,28 @@ data_df <- data.frame(cellType=data[, 1], tSNE1=rtsne_out$Y[, 1], tSNE2=rtsne_ou
 ```{r}
 library(ggplot2)
 library(RColorBrewer)
-data_df_sample <- data_df[sample(1:nrow(data_df), 15000), ]
+set.seed(123)
+FACS_tSNE_df_sample <- FACS_tSNE_df[sample(1:nrow(FACS_tSNE_df), 5000), ]
 
-ggplot(data_df_sample) + geom_point(aes(x=tSNE1, y=tSNE2, fill=cellType), alpha=0.32, shape=21, stroke=0) + scale_fill_manual(values=brewer.pal(n=6, name="Dark2"))+ theme_bw() + theme(axis.title.x = element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), panel.border=element_blank(), axis.line.x=element_line(colour="black"), axis.line.y=element_line(colour="black"), legend.title=element_text(colour="black"))
+## CD45
+
+CD45_p <- ggplot(FACS_tSNE_df_sample) + geom_point(aes(x=tSNE1, y=tSNE2, color=Comp.PerCP.Cy5.5.A), alpha=0.32, shape=16, size=2) + scale_color_gradientn(colors=rev(brewer.pal(n=9, name="RdGy")))+ theme_bw() + theme(axis.title.x = element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), panel.border=element_blank(), axis.line.x=element_line(colour="black"), axis.line.y=element_line(colour="black"), legend.title=element_text(colour="black"))
+ggsave("~/CD45_p.pdf", CD45_p, width=8.32, height=6.28, units="in", useDingbats=FALSE)
+
+APC.Cy7_p <- ggplot(FACS_tSNE_df_sample) + geom_point(aes(x=tSNE1, y=tSNE2, color=Comp.APC.Cy7.A), alpha=0.32, shape=16, size=2) + scale_color_gradientn(colors=rev(brewer.pal(n=9, name="RdGy")))+ theme_bw() + theme(axis.title.x = element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), panel.border=element_blank(), axis.line.x=element_line(colour="black"), axis.line.y=element_line(colour="black"), legend.title=element_text(colour="black"))
+ggsave("~/APC.Cy7_p.pdf", APC.Cy7_p, width=8.32, height=6.28, units="in", useDingbats=FALSE)
+
+tdTomato_p <- ggplot(FACS_tSNE_df_sample) + geom_point(aes(x=tSNE1, y=tSNE2, color=Comp.tdTomato.A), alpha=0.32, shape=16, size=2) + scale_color_gradientn(colors=rev(brewer.pal(n=9, name="RdGy")))+ theme_bw() + theme(axis.title.x = element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), panel.border=element_blank(), axis.line.x=element_line(colour="black"), axis.line.y=element_line(colour="black"), legend.title=element_text(colour="black"))
+ggsave("~/tdTomato_p.pdf", tdTomato_p, width=8.32, height=6.28, units="in", useDingbats=FALSE)
+
+BV510_p <- ggplot(FACS_tSNE_df_sample) + geom_point(aes(x=tSNE1, y=tSNE2, color=Comp.BV510.A), alpha=0.32, shape=16, size=2) + scale_color_gradientn(colors=rev(brewer.pal(n=9, name="RdGy")))+ theme_bw() + theme(axis.title.x = element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), panel.border=element_blank(), axis.line.x=element_line(colour="black"), axis.line.y=element_line(colour="black"), legend.title=element_text(colour="black"))
+ggsave("~/BV510_p.pdf", BV510_p, width=8.32, height=6.28, units="in", useDingbats=FALSE)
+
+APC_p <- ggplot(FACS_tSNE_df_sample) + geom_point(aes(x=tSNE1, y=tSNE2, color=Comp.APC.A), alpha=0.32, shape=16, size=2) + scale_color_gradientn(colors=rev(brewer.pal(n=9, name="RdGy")))+ theme_bw() + theme(axis.title.x = element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), panel.border=element_blank(), axis.line.x=element_line(colour="black"), axis.line.y=element_line(colour="black"), legend.title=element_text(colour="black"))
+ggsave("~/APC_p.pdf", APC_p, width=8.32, height=6.28, units="in", useDingbats=FALSE)
+
+PE.Cy7_p <- ggplot(FACS_tSNE_df_sample) + geom_point(aes(x=tSNE1, y=tSNE2, color=Comp.PE.Cy7.A), alpha=0.32, shape=16, size=2) + scale_color_gradientn(colors=rev(brewer.pal(n=9, name="RdGy"))) + theme_bw() + theme(axis.title.x = element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), panel.border=element_blank(), axis.line.x=element_line(colour="black"), axis.line.y=element_line(colour="black"), legend.title=element_text(colour="black"))
+ggsave("~/PE.Cy7_p.pdf", PE.Cy7_p, width=8.32, height=6.28, units="in", useDingbats=FALSE)
 ```
 
-### Pseudo-time Trajectory Analysis
-
-```{r}
-# source("https://bioconductor.org/biocLite.R")
-# biocLite("destiny")
-library(destiny)
-data_CD4 <- data[data[, 1]=="CD4T", -c(1,2,3)]
-class(data_CD4) <- "numeric"
-
-sigmas <- find_sigmas(log2(data_CD4 + 1))
-CD4.destiny <- DiffusionMap(log2(data_CD4 + 1), optimal_sigma(sigmas))
-CD4.destiny.df <- data.frame(DC1=eigenvectors(CD4.destiny)[,1], DC2=eigenvectors(CD4.destiny)[,2], DC3=eigenvectors(CD4.destiny)[,3])
-CD4.destiny.df <- cbind(CD4.destiny.df, log2(data_CD4 + 1))
-
-colnames(CD4.destiny.df)
-
-ggplot(CD4.destiny.df, aes(x=DC1, y=DC2)) + geom_point(aes(fill=`CD45RA-153(Eu153)Dd`), alpha=0.32, shape=21, stroke=0) + scale_fill_gradientn(colours=rev(brewer.pal(n=9, name="RdYlBu"))) + theme_bw() + theme(axis.title.x = element_blank(), panel.grid.major=element_blank(), panel.grid.minor=element_blank(), panel.border=element_blank(), axis.line.x=element_line(colour="black"), axis.line.y=element_line(colour="black"))
-
-# install.packages("scatterplot3d")
-library(scatterplot3d)
-
-ii <- cut(CD4.destiny.df[, "CD45RA-153(Eu153)Dd"], breaks = seq(min(CD4.destiny.df[, "CD45RA-153(Eu153)Dd"]), max(CD4.destiny.df[, "CD45RA-153(Eu153)Dd"]), len = 1000), include.lowest = TRUE)
-## Use bin indices, ii, to select color from vector of n-1 equally spaced colors
-colors <- colorRampPalette(brewer.pal(n=9, name="RdYlBu"))(1000)[ii]
-
-scatterplot3d(x=CD4.destiny.df$DC1, y=CD4.destiny.df$DC2, z=CD4.destiny.df$DC3, angle=190, pch=21, xlab="DC1", ylab="DC2", zlab="DC3", bg=colors)
-```
-
-
-
+![Flow_tSNE](FACS_Files/Flow_tSNE.jpg)
